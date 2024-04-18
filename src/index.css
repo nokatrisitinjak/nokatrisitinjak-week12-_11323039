@@ -1,0 +1,70 @@
+.container {
+    margin-top: 20px;
+    width: 80%; /* Atur lebar container sesuai kebutuhan */
+    margin: 0 auto; /* Mengatur margin atas dan bawah menjadi 0 dan secara otomatis meratakan sisi kiri dan kanan */
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: center; /* Meratakan ke tengah secara horizontal */
+    align-items: center; /* Meratakan ke tengah secara vertikal jika diperlukan */
+}
+    
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-3 {
+    flex: 0 0 auto;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card {
+    margin: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+button {
+    margin-top: auto;
+}
+
+/* Media queries untuk responsif */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Mengurangi lebar container untuk layar yang lebih kecil */
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%; /* Mengurangi lebar container lagi untuk layar yang lebih kecil */
+    }
+}
